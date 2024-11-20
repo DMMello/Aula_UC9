@@ -35,3 +35,12 @@ print(f'Distância entre a variância e a média (variância / média^2): {dista
 # Coeficiente de variação (desvio padrão / média * 100)
 coef_variacao = (desvio_padrao / media) * 100
 print(f'Coeficiente de variação: {coef_variacao}%')
+
+#variancia amostral
+variancia_amostral = np.var(dados, ddof=1)
+print(f'Variancia amostral: {variancia_amostral}')
+
+#desvio padrao
+desvio_padrao_amostral = np.std(dados, ddof=1)
+print(f'Variancia amostral: {desvio_padrao_amostral}')
+
